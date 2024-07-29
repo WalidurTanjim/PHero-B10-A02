@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a, a:hover{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+.paraContent{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+.paraContentA{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    letter-spacing: 0.3px;
+}
+body{
+    background-color: #151515;
+}
+
+
+
+/* footerFirstDiv css starts */
+footer{
+    width: 1060px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.footerFirstDiv{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fitness{
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(230, 83, 60);
+}
+.footerTitle{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.hrLine{
+    margin: 20px 0;
+    height: 1px;
+    background-color: #808080;
+}
+.footerSecondDiv{
+    text-align: center;
+}
+/* footerFirstDiv css ends */
+
+
+
+
+
+
+
+
+
+
+
+/* media query style starts */
+@media screen and (max-width: 576px) {
+    footer{
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .footerFirstDiv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* @media screen and (min-width: 576px) and (max-width: 992px) {
+    footer{
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .footerFirstDiv{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
