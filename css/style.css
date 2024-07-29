@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6, p, ul{
 li{
     list-style: none;
 }
+.overlayH1{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+}
 .paraContent{
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
@@ -28,6 +33,101 @@ li{
 body{
     background-color: #151515;
 }
+
+
+
+
+/* header css starts */
+header{
+    width: 1060px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navUl{
+    display: flex;
+    align-items: center;
+}
+.navUl li a{
+    padding: 7px 15px;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.navUl li:first-child a{
+    background-color: rgb(230, 83, 60);
+}
+
+
+.headerContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contentDiv{
+    display: flex;
+    align-items: center;
+}
+.contentDiv h1{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 50px;
+}
+.imageDiv{
+    position: relative;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.imageDiv img{
+    height: 550px;
+}
+.workoutVideos, .tutorialVideos{
+    width: 195px;
+    height: 95px;
+    border-radius: 25px;
+    background-color: rgba(73, 73, 73, 0.233);
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.workoutVideos{
+    top: 10px;
+    right: 10px;
+}
+.tutorialVideos{
+    bottom: 10px;
+    left: 10px;
+}
+.circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+    margin-right: 10px;
+}
+
+
+.headerButtons{
+    display: flex;
+}
+.headerButton{
+    padding: 10px 22px;
+    color: #ffffff;
+    border-radius: 30px;
+    margin: 20px 7px;
+    border: 1px solid #ffffff;
+}
+.joinButton{
+    border: 1px solid rgb(230, 83, 60);
+    background-color: rgb(230, 83, 60);
+}
+
 
 
 
@@ -57,7 +157,7 @@ footer{
 .hrLine{
     margin: 20px 0;
     height: 1px;
-    background-color: #808080;
+    background-color: #2c2c2c;
 }
 .footerSecondDiv{
     text-align: center;
@@ -76,6 +176,27 @@ footer{
 
 /* media query style starts */
 @media screen and (max-width: 576px) {
+    header{
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .navUl{
+        display: none;
+    }
+    .headerContent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .headerButtons{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .headerButton{
+        margin: 7px 7px;
+    }
+
+
+
     footer{
         width: 100%;
         padding: 50px 10px;
