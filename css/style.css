@@ -193,6 +193,41 @@ header{
 
 
 
+/* meetOurTeam css starts */
+.meetOurTeamHeader{
+    text-align: center;
+}
+.teamContainer{
+    padding: 20px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.teamMember{
+    position: relative;
+}
+.teamMember img{
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+}
+.teamMemberContent{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.teamMemberContent h2{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
 /* footerFirstDiv css starts */
 footer{
     width: 1060px;
@@ -274,6 +309,14 @@ footer{
     }
     .extraMileContent{
         margin-bottom: 20px;
+    }
+
+
+    .meetOurTeam{
+        width: 100%;
+    }
+    .teamContainer{
+        grid-template-columns: repeat(1, 1fr);
     }
 
 
