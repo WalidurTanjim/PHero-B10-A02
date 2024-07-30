@@ -129,25 +129,49 @@
         <!-- extraMile ends -->
 
         <section class="bmi">
-            <div class="bmiHeader">
+            <div class="bmiHeader defaultWidth">
                 <h1 class="headerTitle">BMI Calculator</h1>
                 <p class="paraContent">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             </div>
             <!-- bmiHeader ends -->
 
             <section class="bmiContainer">
-                <div class="bmiCharts">
-                    <h1 class="overlayH1">BMI Calculator Charts</h1>
-                </div>
-                <!-- bmiCharts ends -->
-
-                <div class="bmiInputs">
-                    <div>
-                        <h1 class="overlayH1">Calculate Your BMI</h1>
-                        <p class="paraContent">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                <div class="bmiContainerInner defaultWidth">
+                    <div class="bmiCharts">
+                        <h1 class="overlayH1">BMI Calculator Charts</h1>
                     </div>
+                    <!-- bmiCharts ends -->
+    
+                    <div class="bmiInputs">
+                        <div class="bmiInputsHeader">
+                            <h1 class="overlayH1">Calculate Your BMI</h1>
+                            <p class="paraContent">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                        </div>
+                        <!-- bmiInputsHeader ends -->
+
+                        <div class="bmiInputFields">
+                            <div class="bmiFields">
+                                <input type="text" name="height" id="height" placeholder="Height/cm" autocomplete="off" required>
+                                <input type="text" name="weight" id="weight" placeholder="Weight/kg" autocomplete="off" required>
+                            </div>
+                            <div class="bmiFields">
+                                <input type="number" name="age" id="age" placeholder="Age" autocomplete="off" required>
+                                <select class="gender" id="gender" name="gender">
+                                    <option value="male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <select class="activityFactor" id="activityFactor" name="activityFactor">
+                                <option disabled selected>Select An Activity Factor</option>
+                                <option value="Female">Female</option>
+                                <option value="Female">Female</option>
+                            </select>
+                            <p class="headerButton joinButton">Calculate</p>
+                        </div>
+                        <!-- bmiInputFields ends -->
+                    </div>
+                    <!-- bmiInputs ends -->
                 </div>
-                <!-- bmiInputs ends -->
             </section>
             <!-- bmiContainer ends -->
         </section>

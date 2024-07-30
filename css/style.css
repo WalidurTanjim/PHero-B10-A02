@@ -192,6 +192,35 @@ header{
 
 
 
+/* bmi css starts */
+.bmiContainer{
+    background: rgb(34, 34, 34);
+ }
+.bmiContainerInner{
+    display: flex;
+    justify-content: space-between;
+}
+.bmiCharts, .bmiInputs{
+    width: 50%;
+}
+.bmiInputFields{
+    margin-top: 20px;
+}
+.bmiFields{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 0;
+}
+.bmiFields input, select{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+
 
 /* meetOurTeam css starts */
 .meetOurTeamHeader{
@@ -309,6 +338,21 @@ footer{
     }
     .extraMileContent{
         margin-bottom: 20px;
+    }
+
+
+    .bmi{
+        padding: 0 20px;
+    }
+    .bmiHeader{
+        width: 100%;
+    }
+    .bmiContainerInner{
+        width: 100%;
+        flex-direction: column;
+    }
+    .bmiCharts, .bmiInputs{
+        width: 100%;
     }
 
 
