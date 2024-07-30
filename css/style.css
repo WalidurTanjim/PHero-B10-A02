@@ -373,6 +373,9 @@ footer{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
+    .bmiCharts{
+        margin-bottom: 25px;
+    }
     .bmiCharts, .bmiInputs{
         width: 100%;
     }
