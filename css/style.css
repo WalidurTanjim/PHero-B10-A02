@@ -72,6 +72,14 @@ header{
 .navUl li:first-child a{
     background-color: rgb(230, 83, 60);
 }
+.menuIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: none;
+    font-size: 30px;
+}
 
 
 .headerContent{
@@ -318,6 +326,9 @@ footer{
     }
     .navUl{
         display: none;
+    }
+    .menuIcon{
+        display: block;
     }
     .headerContent{
         display: grid;
