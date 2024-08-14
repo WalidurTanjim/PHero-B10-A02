@@ -160,10 +160,28 @@ header{
     padding: 10px;
     background: #222222;
     position: relative;
+    transition: .7s all;
 }
 .ourService:hover{
     transform: translateY(-15px);
-    transition: .7s all;
+}
+.serviceIcon{
+    position: absolute;
+    color: white;
+    top: -15px;
+    right: -15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #151515;
+    transition: .5s all;
+}
+.ourService:hover .serviceIcon{
+    background-color: #fff;
+    color: black;
 }
 .ourService h1{
     color: #ffffff;
