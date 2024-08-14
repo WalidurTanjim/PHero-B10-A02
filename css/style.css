@@ -416,6 +416,11 @@ footer{
         padding-right: 10px;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .serviceIcon{
+        top: -15px;
+        right: -10px;
+    }
     /* ourService ens */
 
 
