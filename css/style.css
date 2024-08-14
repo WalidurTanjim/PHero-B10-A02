@@ -138,6 +138,7 @@ header{
     margin: 20px 7px;
     border: 1px solid #ffffff;
     display: inline-block;
+    cursor: pointer;
 }
 .joinButton{
     border: 1px solid rgb(230, 83, 60);
@@ -289,9 +290,19 @@ footer{
 }
 .fitness{
     font-style: italic;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     color: rgb(230, 83, 60);
+    display: flex;
+    align-items: center;
+}
+.fitness img{
+    width: 50px;
+}
+.gym{
+    margin-left: 5px;
+    font-weight: 600;
+    font-style: italic;
 }
 .footerTitle{
     color: #ffffff;
@@ -336,9 +347,12 @@ footer{
         grid-template-columns: repeat(1, 1fr);
     }
     .headerButtons{
-        flex-direction: column;
+        /* flex-direction: column; */
         margin-top: 15px;
     }
+     .headerButton{
+        font-size: 13px;
+     }
     .headerButton{
         margin: 7px 7px;
     }
