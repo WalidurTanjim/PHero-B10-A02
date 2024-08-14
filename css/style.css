@@ -148,6 +148,34 @@ header{
 
 
 
+/* ourServices css starts */
+.ourServices{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.ourService{
+    border: 1px solid rgb(97, 97, 97);
+    border-radius: 5px;
+    padding: 10px;
+    background: #222222;
+    position: relative;
+}
+.ourService:hover{
+    transform: translateY(-15px);
+    transition: .7s all;
+}
+.ourService h1{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+
+
+
 /* changeYourHabits css starts */
 .changeYourHabits{
     width: 1060px;
@@ -356,6 +384,15 @@ footer{
     .headerButton{
         margin: 7px 7px;
     }
+
+
+    .ourServices{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* ourService ens */
 
 
 
